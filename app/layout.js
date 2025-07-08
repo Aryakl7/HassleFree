@@ -6,18 +6,19 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Ranak Shah",
-  description: "Made by Ranak",
+  title: "Aryak Lalwani",
+  description: "Made by aryak",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
         <ThemeProvider
         attribute="class"
         defaultTheme="system"
         enableSystem
+        disableTransitionOnChange
         >
         {children}
         </ThemeProvider>

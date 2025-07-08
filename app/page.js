@@ -10,6 +10,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Building2, Users, Bell, FileText, QrCode, MessageSquare, Calendar, Camera, ClipboardList, UserPlus, UserMinus, Car, Briefcase, Users as UsersIcon, Shield, Settings, CreditCard, ChartBar, Map, Phone, Lock, Zap, Smile, CheckCircle, Star, ArrowRight } from 'lucide-react'
 import Cookies from 'js-cookie'
+import AdminLoginPage from './admin/login/page'
+import AdminSignupPage from './admin/signup/page'
 
 export default function LandingPage() {
   const [activeTab, setActiveTab] = useState('admin')
@@ -277,6 +279,7 @@ export default function LandingPage() {
               Start Your Free Trial Today
             </Button>
           </div>
+          <AdminSignupPage/>
         </section>
       </main>
 
